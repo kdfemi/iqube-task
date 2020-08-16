@@ -1,13 +1,84 @@
-body {
+:root
+ {
+  --primary-color: #F2994A;
+  --tertiary-color: #9E9689;
+}
+* {
   margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #DCD7CC;
+}
+
+form 
+{
+  padding-top: 10px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+form label, form input, form select
+{
+  display: block;
+  width: 100%;
+  font-size: 12px;
+    
+}
+
+form em 
+{
+  color: #f45702;
+  font-weight: bold;
+}
+  
+form input, form select 
+{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding-left: 5px;
+  outline: none;
+  height: 40px;
+}
+
+  
+form input:focus, form select:focus 
+{
+  border: 1px solid var(--tertiary-color);
+}
+
+form select {
+  height: 44px;
+}
+
+form label 
+{
+  font-weight: 500;
+  line-height: 3;
+}
+
+form small 
+{
+  color: #817E9E;
+  line-height: 2.5;
+  display: block;
 }

@@ -1,0 +1,25 @@
+a.navigation_item
+{
+    position: relative;
+    font-weight: 500;
+}
+.active 
+{
+    color: var(--primary-color);
+}
+
+
+.active::after,
+a.navigation_item:hover::after,
+a.navigation_item:active::after 
+{
+    position: absolute;
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 2.5px;
+    z-index: 1;
+
+}

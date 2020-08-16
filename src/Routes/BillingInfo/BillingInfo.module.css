@@ -1,0 +1,33 @@
+.card 
+{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.security 
+{
+    flex: 2;
+    display: flex;
+    gap: 30px;
+}
+
+@media (min-width: 501px) 
+{
+    .card 
+    {
+    
+        flex-direction: row;
+    }
+
+    .cardNo
+    {
+        flex: 2;
+    }
+
+    .security 
+{
+    gap: 10px;
+}
+  
+}

@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import SuccessfulContainer from './Containers/Successful/Successful';
+import PurchaseContainer from './Containers/Purchase/Purchase';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className={'container'}>
+        <Switch>
+          <Route path="/purchase" component={PurchaseContainer}/>
+          <Route path="/successful" component={SuccessfulContainer}/>
+          <Redirect from="/" to="/purchase"/>
+        </Switch>
+      </div>
     </div>
   );
 }

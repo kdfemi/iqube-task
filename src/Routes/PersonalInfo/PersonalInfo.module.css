@@ -1,0 +1,16 @@
+
+
+.stateFields 
+{
+    display: flex;
+    gap: 30px;
+}
+
+.lga_wrapper
+{
+    flex: 2;
+}
+.state_wrapper 
+{
+    flex: 1;
+}

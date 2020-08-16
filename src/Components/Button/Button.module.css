@@ -1,0 +1,17 @@
+button {
+    background-image: linear-gradient( #F2BF4C, #F2994A);
+    outline: none;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 5px;
+    padding: 12px;
+    min-width: 100px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.cancel_btn {
+    background: white;
+    border: none;
+    color: #646E9A;
+    border-radius: unset;
+}
